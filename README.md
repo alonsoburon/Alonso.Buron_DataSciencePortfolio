@@ -1,25 +1,33 @@
-# Alonso Burón's Data Science Portfolio
+# Cuaderno de estudio Babu Stata
 
-Welcome to my Data Science Portfolio! Here you'll find a collection of projects and analyses showcasing my expertise in data science, computer usage, and technical support. 
+## Sesión Parte 1: Introducción a los Fundamentos de Stata
 
-## About Me
+1. **[Importar datos](./importar_datos.md)** 📥
+   - Cargar conjuntos de datos en Stata:
+   - Comprender los formatos de datos.
 
-I am a passionate data enthusiast with a strong foundation in Python programming, IT support, and a keen interest in data science. Currently pursuing a Data Science Bachelor's degree, I am committed to leveraging data-driven insights to solve real-world problems.
+2. **[Gestión de Datos](./gestion_de_datos.md)** 📊
+   - Limpiar y organizar datos.
+   - Generar variables.
 
-## Projects
+3. **[Análisis Básico](./analisis_basico.md)** 📈
+   - Estadísticas descriptivas.
+   - Distribuciones de frecuencia.
 
-### Project 1: MiniProyecto 
+## Sesión Parte 2: Uso Intermedio de Stata
 
-- **Description:** Exploration of different SkLearn algorithms, after database cleanup. Using BandCamp's Sales data.
-- **Tools Used:** Python, Pandas, NumPy, Scikit-Learn, MatPlotLib
-- **Key Contributions:** A lot of data in sales is relevant for frontend systems, but not so for analysis and sales prediction. Music tends to miss a lot of data about the music itself, as it's not embedded but rather has to be analyzed (either manually or using AI) in order to be discovered and quantified.
+6. **[Análisis de Regresión](./analisis_de_regresion.md)** 📉
+   - Comprender modelos de regresión.
+   - Realizar regresión simple.
 
+7. **[Interpretación de Resultados](./interpretacion_de_resultados.md)** 📊
+   - Analizar resultados de regresión.
+   - Sacar conclusiones.
 
-## Contact Me
+8. **[Técnicas Avanzadas](./tecnicas_avanzadas.md)** 🚀
+   - Análisis de series temporales.
+   - Análisis de datos de panel.
 
-If you're interested in collaborating on a project or discussing opportunities, feel free to reach out to me:
-
-- **Email:** alonso.buron.ardiles@gmail.com
-- **LinkedIn:** https://www.linkedin.com/in/alonsoburon/
-
-I'm always eager to connect with fellow data enthusiasts and professionals in the field. Let's explore the possibilities together!
+9. **[Visualización](./visualizacion.md)** 🎨
+   - Crear gráficos básicos.
+   - Mejorar visualizaciones.
