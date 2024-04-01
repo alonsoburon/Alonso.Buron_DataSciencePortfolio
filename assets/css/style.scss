@@ -2,11 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
-
-color_scheme:
-  background: '#330033' # dark purple
-  text: '#F8BBD0' # light pink
-  primary: '#AD1457' # dark pink
-  secondary: '#6A1B9A' # dark purple
-  light: '#FCE4EC' # light pink
-
+body {
+  background-color: #000000; // Dark background
+  color: #FFD1DC; // Pastel pink text
+}
