@@ -3,38 +3,10 @@
 
 @import "{{ site.theme }}";
 
-body {
-  background-color: #FFC0CB; /* Pink background */
-  font-family: 'Arial', sans-serif; /* Simple, readable font */
-  color: #000000; /* Black text */
-}
+color_scheme:
+  background: '#330033' # dark purple
+  text: '#F8BBD0' # light pink
+  primary: '#AD1457' # dark pink
+  secondary: '#6A1B9A' # dark purple
+  light: '#FCE4EC' # light pink
 
-h1, h2, h3, h4, h5, h6 {
-  color: #FF69B4; /* Hot pink headers */
-}
-
-a {
-  color: #FF1493; /* Deep pink links */
-  text-decoration: none; /* Remove underline from links */
-}
-
-a:hover {
-  color: #C71585; /* Dark pink links on hover */
-}
-
-button {
-  background-color: #FF69B4; /* Hot pink buttons */
-  color: #FFFFFF; /* White text on buttons */
-  border: none; /* Remove button border */
-  padding: 15px 32px; /* Button padding */
-  text-align: center; /* Center text on buttons */
-  text-decoration: none; /* Remove underline from button text */
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer; /* Change cursor to pointer on button hover */
-}
-
-button:hover {
-  background-color: #C71585; /* Dark pink buttons on hover */
-}
