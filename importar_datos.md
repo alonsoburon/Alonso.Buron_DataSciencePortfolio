@@ -1,14 +1,16 @@
 ## A Stata no le gustan los `\`🙅🏻‍♂️, usa `/` en su lugar🤓.
 
-Define el $home macro para representar el directorio de inicio del usuario.
+Define el macro $home para representar el directorio de inicio del usuario.
 `global home "C:/Users/babu"`
 
-Define el $datos macro para representar el directorio donde se guardan los archivos de datos.
+Define el macro $datos para representar el directorio donde se guardan los datos.
 `global datos "$home/datos"`
 
-Define el $tablas macro para representar el directorio donde se guardan los archivos de tabla.
+Define el macro $tablas para representar el directorio donde se guardan las tablas.
 `global tablas "$home/tablas"`
 
+Define el macro $graficos para representar el directorio donde se guardaran los gráficos
+`global graficos "$home/graficos"`
 ______
 
 ### Cargar archivos `.dta`
@@ -50,3 +52,32 @@ ___________________
  Es esencial entender cómo están formateados los datos para realizar análisis correctos y manipulaciones adecuadas en Stata.
  
  Por ejemplo, al trabajar con fechas, es necesario saber cómo Stata interpreta diferentes formatos de fechas (como dd/mm/aaaa o mm/dd/aaaa) para evitar errores de análisis.
+
+______________
+
+## Quick Start Code 🏃🏾‍♀️
+Recuerda modificar la linea `global home` y la línea `import delimited` para agregar el correcto path en tu computador.
+```stata
+// Define los macros
+global home "C:/Users/Catal/Documentos/Stata"
+global datos "$home/datos"
+global tablas "$home/tablas"
+global graficos "$home/graficos"
+
+// Carga un .csv
+import delimited "$datos/nombrearchivo.csv", clear firstrow
+// clear borra bases de antes, firstrow define que los nombres de las variables estarán en la primera fila.
+// opcionalmente usa delimiter(";") para csv's que separan por ; en vez de ,
+
+// Muestra los datos
+list
+
+// Resumen de estadísticas
+summarize
+
+// Describe los datos
+describe
+
+// Mira la base de datos de forma gráfica
+br
+```

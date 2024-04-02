@@ -69,3 +69,25 @@ Aquí tienes una lista de comandos útiles para generar variables a partir de ot
 
 10. **egen rowtotal**: 📝 Calcula la suma de las filas para varias variables y almacena el resultado en una nueva variable. Es como sumar las calificaciones de varios exámenes para obtener la calificación total.
    * Ejemplo: `egen total_score = rowtotal(score1 score2 score3)`
+
+### Quick Start:
+
+```stata
+clear all
+set more off // Entrega todos los resultados de una, en vez de preguntar si quieres ver más
+
+// Define global paths
+global main "C:/Users/nuxap/Documents/GitHub/Alonso.Buron_DataSciencePortfolio" //Recuerda cambiar esto
+global tablas "$main/tablas"
+global datos "$main/datos"
+
+// Importa los datos
+import delimited using $main/"your_data.csv", clear firstrow// recuerda cambiar esto al nombre de tus datos!
+
+///
+/// ACA LIMPIAS TUS DATOS, BOTAS MISSING VALUES, PASAS DE STR A INT O FLOAT, ETC.
+///
+
+// guardas los datos limpios para trabajar con ellos desde ahora
+save "cleaned_data.dta", replace
+```
